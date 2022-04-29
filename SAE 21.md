@@ -10,7 +10,7 @@ Je me suis donc lancer dans la configuration du dhcp avec ce que j'avais pu lire
 
 J'ai donc fait ma premiere configuration.
 
-<img src="conf.dhcp.png"/>
+<img src="conf_dhcp.png">
 
 Enfin j'ai branché un PC pour faire le test et mon dhcp fonctionne bien .
 
