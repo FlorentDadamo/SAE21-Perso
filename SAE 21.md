@@ -39,11 +39,11 @@ j'ai donc utliser les commande suivantes :
 
 J'ai ensuite modifier le fichier host.
 
-photo host apache
+<img src="host apache2.png"/>
 
 Enfin nous pouvons voir le site en tapant l'addresse ip du PC qui sert de serveur.
 
-photo site apache
+<img src="site ip.png"/>
 
 
 ## DNS 
