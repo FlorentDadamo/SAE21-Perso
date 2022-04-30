@@ -1,49 +1,49 @@
 
 #  SAE 21
 
-Tout d'abord lors des premieres seances j'ai commencé a me renseigner sur les diffrents poitns aucel j'etais attribué, j'ai donc lu plusieurs forums site internet video ... Pour m'aider a la compréhension et la utilisation de mes taches . 
+Tout d'abord, lors des premières séances, j'ai commencé à me renseigner sur les différents points qui m'étaient attribués. Je me suis donc intéressé à plusieurs forums, sites internet, videos... pour m'aider à la compréhension et à l'utilisation de mes tâches. 
 
 ## DHCP
 
 
-Lors de cette SAE j'ai pu m'occuper du serveur dhcp , je me suis donc d'abord renseigner sur la fonctionnalité du dhcp avec plusieurs forum et site internet.
+Lors de cette SAE, j'ai pu apprendre à découvrir le fonctionnement du serveur dhcp, je me suis donc d'abord intéressé à des vidéos portant sur la fonctionnalité du dhcp.
 
-Je me suis donc lancer dans la configuration du dhcp avec ce que j'avais pu lire sur les forums.
+Après ces différentes lectures et découvertes sur les forums, je me suis donc lancé dans la configuration du dhcp.
 
-J'ai donc fait ma premiere configuration.
+J'ai alors fait ma première configuration.
 
 <img src="conf _dhcp.png"/>
 
-Enfin j'ai branché un PC pour faire le test et mon dhcp fonctionne bien .
+Enfin, j'ai branché un PC pour faire le test et mon dhcp fonctionnait bien .
 
 <img src="dhcp_pc.png"/>
 
 ## DNS 
 
-Enfin pour la parti sur le DNS je me suis beaucoup renseigner sur des forums.
+Puis, pour la partie sur le DNS j'ai suivi la même démarche en accentuant mes recherches sur les forums.
 
-Pour la configuration j'ai donc utiliser les fichier :
+Pour la configuration, j'ai donc utilisé les fichiers :
 
         resolv.conf
         named.conf.options
         named.conf.local
         
-et créer le fichier :
+et j'ai créé le fichier :
 
         db.cischool
 
-Dans le resolv.conf je supprime tout et ajoute:
+Dans le resolv.conf, j'ai supprimé tout et j'ai ajouté:
 
         search cischool
         nameserver 10.213.9.1
         
-Dans le named.conf.options j'ajoute :
+Dans le named.conf.options j'ai ajouté :
 
         forwarders{8.8.8.8;};
         listen-on-v6 {::1;};
         
         
-Dans le named.conf.local j'ajoute la zone:
+Dans le named.conf.local j'ai ajouté la zone:
         
         zone "cischool"{
         type master;
@@ -58,15 +58,15 @@ Nous pouvons ensuite voir avec la commande dig que le dns fonctionne bien
 
 <img src="dig dns.png"/>
 
-Enfin dans la barre de recherche en tapant http://www.cischool nous trouvons bien le site créer 
+Enfin dans la barre de recherche en tapant http://www.cischool nous trouvons bien le site créé 
 
 <img src="dns.png"/>
 
 
 ## Apache2
 
-Pour la suite de cette SAE j'ai pu fair ele serveur web externe
-j'ai donc utliser les commande suivantes : 
+Pour la suite de cette SAE, j'ai pu faire le serveur web externe
+J'ai donc utilisé les commandes suivantes : 
 
     apt-get purge apache2
 
@@ -82,17 +82,17 @@ j'ai donc utliser les commande suivantes :
 
     nano style.css
 
-dans le fichier index.html je met donc mon code pour le site , et créer un fichier css .
+Dans le fichier index.html j'ai mis donc mon code pour le site , et j'ai créé un fichier css .
 
-J'ai ensuite modifier le fichier host.
+J'ai ensuite modifié le fichier host.
 
 <img src="host apache2.png"/>
 
-Enfin nous pouvons voir le site en tapant l'addresse ip du PC qui sert de serveur.
+Enfin, nous pouvons voir le site en tapant l'adresse IP du PC, qui sert de serveur.
 
 <img src="site ip.png"/>
 
-J'ai ensuite voulu essayer de faire le site en virtuel mais je n'ai pas reussi a installer la machine virtuelle sur GNS3 pour créer le site.
+J'ai alors voulu essayer de faire le site en virtuel mais je n'ai pas reussi à installer la machine virtuelle sur GNS3 pour créer le site.
 
 
 
