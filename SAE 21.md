@@ -1,6 +1,8 @@
 
 #  SAE 21
 
+Tout d'abord lors des premieres seances j'ai commencé a me renseigner sur les diffrents poitns aucel j'etais attribué, j'ai donc lu plusieurs forums site internet video ... Pour m'aider a la compréhension et la utilisation de mes taches . 
+
 ## DHCP
 
 
