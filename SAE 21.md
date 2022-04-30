@@ -16,39 +16,6 @@ Enfin j'ai branché un PC pour faire le test et mon dhcp fonctionne bien .
 
 <img src="dhcp_pc.png"/>
 
-
-
-## Apache2
-
-Pour la suite de cette SAE j'ai pu fair ele serveur web externe
-j'ai donc utliser les commande suivantes : 
-
-    apt-get purge apache2
-
-    apt-get install apache2
-
-    cd var/www/html/
-
-    nano index.html 
-
-    rm -r index.html 
-
-    nano index.html
-
-    nano style.css
-
-dans le fichier index.html je met donc mon code pour le site , et créer un fichier css .
-
-J'ai ensuite modifier le fichier host.
-
-<img src="host apache2.png"/>
-
-Enfin nous pouvons voir le site en tapant l'addresse ip du PC qui sert de serveur.
-
-<img src="site ip.png"/>
-
-J'ai ensuite voulu essayer de faire le site en virtuel mais je n'ai pas reussi a installer la machine virtuelle sur GNS3 pour créer le site.
-
 ## DNS 
 
 Enfin pour la parti sur le DNS je me suis beaucoup renseigner sur des forums.
@@ -83,3 +50,64 @@ Dans le named.conf.local j'ajoute la zone:
 
 
 <img src="conf dns.png"/>
+
+
+Nous pouvons ensuite voir avec la commande dig que le dns fonctionne bien 
+
+<img src="dig dns.png"/>
+
+Enfin dans la barre de recherche en tapant http://www.cischool nous trouvons bien le site créer 
+
+<img src="dns.png"/>
+
+
+## Apache2
+
+Pour la suite de cette SAE j'ai pu fair ele serveur web externe
+j'ai donc utliser les commande suivantes : 
+
+    apt-get purge apache2
+
+    apt-get install apache2
+
+    cd var/www/html/
+
+    nano index.html 
+
+    rm -r index.html 
+
+    nano index.html
+
+    nano style.css
+
+dans le fichier index.html je met donc mon code pour le site , et créer un fichier css .
+
+J'ai ensuite modifier le fichier host.
+
+<img src="host apache2.png"/>
+
+Enfin nous pouvons voir le site en tapant l'addresse ip du PC qui sert de serveur.
+
+<img src="site ip.png"/>
+
+J'ai ensuite voulu essayer de faire le site en virtuel mais je n'ai pas reussi a installer la machine virtuelle sur GNS3 pour créer le site.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
