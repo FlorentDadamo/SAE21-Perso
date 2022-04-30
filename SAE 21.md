@@ -32,7 +32,7 @@ et j'ai créé le fichier :
 
         db.cischool
 
-Dans le resolv.conf, j'ai supprimé tout et j'ai ajouté:
+Dans le resolv.conf, j'ai tout supprimé et j'ai ajouté:
 
         search cischool
         nameserver 10.213.9.1
